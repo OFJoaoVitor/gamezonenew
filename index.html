@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="preloader-logo">GameZone</div>
+    </div>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">GameZone</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="./index.html">Página Inicial</a></li>
+                    <li><a href="./profile.html">Perfil</a></li>
+                    <li><a href="./amigos.html">Amigos</a></li>
+                    <li><a href="./sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="./comunidades.html">Comunidades</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <aside class="sidebar">
+            <div class="profile-summary">
+                <img src="./img/unnamed.jpg" alt="Foto do Perfil" class="profile-pic" id="sidebar-profile-pic">
+                <h3 id="sidebar-profile-name">Nome do Usuário</h3>
+                <p id="sidebar-profile-bio">Sua bio aparecerá aqui.</p>
+                <a href="./profile.html" class="primary-btn">Editar Perfil</a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="./amigos.html">
+                            <span class="sidebar-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </span> Amigos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./comunidades.html">
+                            <span class="sidebar-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            </span> Comunidades
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="notifications-btn">
+                            <span class="sidebar-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                            </span> Notificações
+                            <span class="notification-count hidden">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="feed">
+            <h2>Página Inicial</h2>
+
+            <div class="create-post-box">
+                <textarea id="post-content-input" placeholder="No que você está pensando?"></textarea>
+                <div id="mentions-suggestions-main" class="suggestions-popup hidden"></div>
+                <div class="create-post-actions">
+                    <span id="file-name-display"></span>
+                    <label for="file-input" class="file-input-label" title="Anexar arquivo">📎</label>
+                    <input type="file" id="file-input" class="hidden">
+                    <button id="submit-post-button" class="primary-btn">Postar</button>
+                </div>
+            </div>
+
+            <div id="feed-posts-container"></div>
+            
+        </section>
+    </main>
+
+    <div id="notification-overlay" class="hidden">
+        <div id="notification-panel">
+            <aside class="notification-sidebar">
+                <h3>Notificações</h3>
+                <ul class="notification-filters">
+                    <li><button class="filter-btn active" data-filter="all">Todas</button></li>
+                    <li><button class="filter-btn" data-filter="posts">Página Inicial</button></li>
+                    <li><button class="filter-btn" data-filter="communities">Comunidades</button></li>
+                    <li><button class="filter-btn" data-filter="friends">Amigos</button></li>
+                </ul>
+            </aside>
+            <section class="notification-list-container">
+                <header class="notification-header">
+                    <h4>Todas as Notificações</h4>
+                    <button id="close-notifications-btn" title="Fechar">✖</button>
+                </header>
+                <ul id="notification-list">
+                    <li class="no-notifications">Você não tem novas notificações.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/pt-br.min.js"></script>
+    <script src="main.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="notifications.js" defer></script> 
+    <script src="mentions.js" defer></script>
+</body>
+</html>

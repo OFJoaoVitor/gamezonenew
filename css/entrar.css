@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+Body{
+    background-color: #1a1a1b;
+    padding-bottom: 1px;
+    gap: 10px;
+}
+
+.titulo{
+    font-weight: bolder;
+    font-size:40px;
+    margin: auto;
+}
+
+.linha{
+    width: 100%;
+    background-color: #2b2b2b;
+    height: 1%;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.nav-container{
+    background-color:#3e4042;
+    padding: 15px;
+    width: 100%;
+    height: 75px;
+    align-content: center;
+}
+
+.nome-logo{
+    font-weight: bold;
+    text-decoration: none;
+    color: #B36BFF;
+    font-size: xx-large;
+}
+
+.Login-entrar{
+    background-color: #e9e9e9;
+    height: 600px;
+    width: 450px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    
+}
+.importante{
+    background-color:rgb(218, 218, 218);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 170px;
+    width: 100%;
+    font-weight: bold;
+    
+}
+
+.importante2{
+    background-color: rgb(255, 252, 252);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 15px;
+}
+
+.search-text{
+    border-radius: 5px;
+    border: 0;
+    width: 100%;
+}
+
+.search-text input{
+    font-size: 500;
+    font-weight: bold;
+}
+
+
+
+.confirmar{
+    padding: 10px;
+    
+}
+
+.confirmar-btn:hover{
+    background-color: rgb(78, 0, 109);
+    transition: 0.5s;
+}
+
+.confirmar-btn{
+    border: 0;
+    border-radius: 20px;
+    background-color: rgb(112, 0, 156);
+    color: whitesmoke;
+    width: 100%;
+    height: 40px;
+    font-size: larger;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.entrar{
+    padding: auto;
+    margin: auto;
+}
+
+.entrar-href{
+    text-decoration: none;
+    color: rgb(0, 140, 255);
+}
+
+.entrar-href:hover{
+    color: rgb(0, 118, 214);
+    transition: 0.5s;
+}
+
+.esqueci-senha{
+    text-decoration: none;
+    color: rgb(0, 140, 255);
+    position: fixed;
+    margin-top: 1px;
+}
+
+.esqueci-senha:hover{
+    text-decoration: none;
+    color: rgb(0, 118, 214);
+    position: fixed;
+}
+

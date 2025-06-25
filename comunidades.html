@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidades - GameZone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="no-scroll"> <div id="preloader">
+        <div class="preloader-logo">GameZone</div>
+    </div>
+    
+    <div class="communities-layout">
+        <nav class="communities-server-list" id="server-list">
+            </nav>
+
+        <main class="communities-main-content">
+            <header class="main-header">
+                <div class="container">
+                    <a href="./index.html" class="logo">Gamezone</a>
+                     <nav class="main-nav">
+                        <ul>
+                            <li><a href="./index.html">Página Inicial</a></li>
+                            <li><a href="./profile.html">Perfil</a></li>
+                            <li><a href="./amigos.html">Amigos</a></li>
+                            <li><a href="./sobrenos.html">Sobre Nós</a></li>
+                            <li><a href="./comunidades.html">Comunidades</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            
+            <div class="content-area">
+                <div id="explore-communities-section" class="card">
+                    <h2>Explorar Comunidades</h2>
+                    <p>Encontre novas comunidades para participar.</p>
+                    <div class="search-bar-container">
+                        <input type="search" id="community-search-input" class="form-control" placeholder="Buscar comunidade por nome ou ID...">
+                    </div>
+                    <div id="community-search-results" class="search-results-grid">
+                        </div>
+                </div>
+                
+                <div id="create-community-section" class="card hidden">
+                    <h2>Criar Nova Comunidade</h2>
+                    <form id="create-community-form">
+                        <div class="form-group">
+                            <label for="community-name-input">Nome da Comunidade:</label>
+                            <input type="text" id="community-name-input" class="form-control" required>
+                        </div>
+                         <div class="form-group">
+                            <label for="community-desc-input">Descrição:</label>
+                            <textarea id="community-desc-input" class="form-control" rows="2" required></textarea>
+                        </div>
+                        <div class="form-group">
+                             <label for="community-icon-input">Ícone da Comunidade (Opcional):</label>
+                             <input type="file" id="community-icon-input" class="form-control" accept="image/*">
+                        </div>
+                        <button type="submit" class="primary-btn">Criar</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="main.js" defer></script>
+    <script src="comunidades.js" defer></script>
+</body>
+</html>

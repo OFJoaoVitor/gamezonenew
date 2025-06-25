@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil - GameZone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">GameZone</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="./index.html">Página Inicial</a></li>
+                    <li><a href="./profile.html">Perfil</a></li>
+                    <li><a href="./amigos.html">Amigos</a></li>
+                    <li><a href="./sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="./comunidades.html">Comunidades</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="profile-container">
+            <h1>Editar Perfil</h1>
+            
+            <div class="profile-picture-container" id="profile-picture-container" title="Clique para alterar a foto (apenas em modo de edição)">
+                <label for="profile-pic-input" class="profile-picture-label">
+                    <img src="./img/unnamed.jpg" alt="Foto do Perfil" id="profile-pic-display">
+                </label>
+            </div>
+            <input type="file" id="profile-pic-input" accept="image/*" class="hidden">
+
+            <div class="profile-details">
+                <div id="view-mode">
+                    <h2 id="display-name">Nome do Usuário</h2>
+                    <p class="handle-display" id="display-handle">@username</p>
+                    <p id="display-bio">Esta é a minha bio!</p>
+                </div>
+
+                <div id="edit-mode" class="hidden">
+                    <div class="form-group">
+                        <label for="name-input">Nome de Exibição:</label>
+                        <input type="text" id="name-input" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="handle-input">Nome de Usuário (@handle):</label>
+                        <input type="text" id="handle-input" class="form-control" placeholder="Ex: seu_nome_unico">
+                    </div>
+                    <div class="form-group">
+                        <label for="bio-input">Bio:</label>
+                        <textarea id="bio-input" class="form-control" rows="4"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-actions">
+                <button id="edit-button" class="primary-btn">Editar Perfil</button>
+                <button id="save-button" class="primary-btn hidden">Salvar</button>
+                <button id="cancel-button" class="danger-btn hidden">Cancelar</button>
+            </div>
+        </div>
+
+        <div class="theme-switcher-container">
+            <h3>Tema da Interface</h3>
+            <label class="theme-switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </main>
+    
+    <script src="main.js" defer></script>
+    <script src="profile.js" defer></script>
+</body>
+</html>

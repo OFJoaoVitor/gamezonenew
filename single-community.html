@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade - GameZone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="no-scroll">
+    <div id="preloader">
+        <div class="preloader-logo">GameZone</div>
+    </div>
+    
+    <div class="community-page-layout">
+        <header class="community-page-header">
+            <a href="./comunidades.html" class="back-to-communities">❮</a>
+            <h2 id="community-name-header">Nome da Comunidade</h2>
+            <div class="header-actions">
+                <button class="header-icon-btn" id="settings-btn" title="Configurações da Comunidade">⚙️</button>
+                <button class="header-icon-btn" id="delete-community-header-btn" title="Deletar Comunidade">✖</button>
+            </div>
+        </header>
+
+        <main class="community-feed" id="feed-posts-container">
+            </main>
+        
+        <footer class="community-post-footer">
+            <div class="create-post-box-inline">
+                <label for="community-file-input" class="file-input-label" title="Anexar arquivo">+</label>
+                <input type="file" id="community-file-input" class="hidden" accept="image/*,video/*,application/pdf">
+                <input type="text" id="post-content-input" placeholder="O que você quer compartilhar na comunidade?" autocomplete="off">
+                <button id="submit-post-button" class="primary-btn">Postar</button>
+            </div>
+            <div id="mentions-suggestions-community" class="mentions-suggestions hidden"></div>
+        </footer>
+    </div>
+
+    <div id="settings-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <header class="modal-header">
+                <h3>Configurações da Comunidade</h3>
+            </header>
+            <form id="community-settings-form">
+                <div class="form-group">
+                    <label for="settings-name-input">Nome da Comunidade</label>
+                    <input type="text" id="settings-name-input" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="settings-desc-input">Descrição</label>
+                    <textarea id="settings-desc-input" class="form-control" rows="3" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Ícone da Comunidade (PFP)</label>
+                    <div class="file-upload-group"> <label for="settings-icon-input" class="file-input-label">Selecionar Ícone</label>
+                        <input type="file" id="settings-icon-input" class="hidden" accept="image/*">
+                        <small id="current-icon-name" class="file-name-display">Nenhum arquivo selecionado.</small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Banner da Comunidade</label>
+                    <div class="file-upload-group"> <label for="settings-banner-input" class="file-input-label">Selecionar Banner</label>
+                        <input type="file" id="settings-banner-input" class="hidden" accept="image/*">
+                        <small id="current-banner-name" class="file-name-display">Nenhum arquivo selecionado.</small>
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" id="cancel-settings-btn" class="danger-btn">Cancelar</button>
+                    <button type="submit" class="primary-btn">Salvar Alterações</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/pt-br.min.js"></script>
+    <script src="main.js" defer></script>
+    <script src="mentions.js" defer></script>
+    <script src="notifications.js" defer></script>
+    <script src="single-community.js" defer></script>
+</body>
+</html>

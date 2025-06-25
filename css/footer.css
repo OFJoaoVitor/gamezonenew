@@ -1,0 +1,35 @@
+
+.gamezone-footer {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  font-size: 12px;
+  color: #d7dadc;
+  text-align: right;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+.gamezone-footer-content .link-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.gamezone-footer-content .link-row a {
+  color: #a259ff; 
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.gamezone-footer-content .link-row a:hover {
+  text-decoration: underline;
+  color: #c084fc; 
+}
+
+.gamezone-footer p {
+  margin: 5px 0 0 0;
+  font-size: 12px;
+  color: #999;
+}

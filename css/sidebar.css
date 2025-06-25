@@ -1,0 +1,78 @@
+.gamezone-sidebar {
+    width: 250px;
+    background-color: #1a1a1b;
+    color: #d7dadc;
+    height: 100vh;
+    padding: 80px 15px 20px; 
+    font-family: 'Orbitron', sans-serif;
+    border-right: 1px solid #2c2c2f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+  }
+
+  .sidebar-section {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .sidebar-section li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: #d7dadc;
+  }
+
+  .sidebar-section li:hover,
+  .sidebar-section .active {
+    background-color: #2e2e30;
+    color: #a259ff;
+  }
+
+  .sidebar-section .active i {
+    color: #a259ff;
+  }
+
+  .sidebar-section li i {
+    width: 20px;
+    color: #999;
+  }
+
+  .sidebar-section li a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 12px;
+    color: #888;
+    margin: 10px 0 5px 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .see-more {
+    color: #a259ff;
+    font-weight: bold;
+    padding-left: 28px;
+    cursor: pointer;
+  }
+
+  .beta {
+    background-color: #a259ff;
+    color: white;
+    font-size: 10px;
+    padding: 1px 5px;
+    border-radius: 4px;
+    margin-left: 5px;
+  }

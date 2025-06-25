@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - GameZone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="chat-page-body">
+
+    <aside class="chat-sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">GameZone</a>
+            <h2>Conversas</h2>
+        </div>
+        <div class="chat-list" id="chat-list-container">
+            </div>
+    </aside>
+
+    <main class="chat-main">
+        <header class="chat-header">
+            <div class="container chat-header-content">
+                <div class="friend-info">
+                    <img src="./img/unnamed.jpg" alt="Avatar do amigo" id="chat-friend-avatar">
+                    <h2 id="chat-friend-name">Selecione uma conversa</h2>
+                </div>
+            </div>
+        </header>
+
+        <div class="messages-area" id="messages-area">
+            <div class="no-chat-selected">
+                <p>Selecione um amigo na barra lateral para começar a conversar.</p>
+            </div>
+        </div>
+
+        <footer class="chat-footer">
+            <form id="message-form" class="message-form hidden">
+                <label for="chat-file-input" class="file-input-label" title="Anexar arquivo">+</label>
+                <input type="file" id="chat-file-input" class="hidden" accept="image/*,video/*,application/pdf">
+                <input type="text" id="message-input" placeholder="Digite uma mensagem..." autocomplete="off">
+                <button type="submit" class="primary-btn">Enviar</button>
+            </form>
+        </footer>
+    </main>
+    
+    <script src="main.js" defer></script>
+    <script src="notifications.js" defer></script>
+    <script src="chat.js" defer></script>
+</body>
+</html>
